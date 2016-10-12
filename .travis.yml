@@ -8,7 +8,7 @@ notifications:
 install:
   - pip install python-coveralls
 
-script: python test_rpn.py
+script: coverage run test_rpn.py
 
 after_success:
   - coveralls
