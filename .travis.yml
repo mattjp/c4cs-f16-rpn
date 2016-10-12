@@ -5,3 +5,4 @@ python:
 notifications:
     email: false
 
+script: nosetests
