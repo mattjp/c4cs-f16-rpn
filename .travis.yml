@@ -1,8 +1,14 @@
 language: python
 python:        
-    - "3.5"
+  - "3.5"
 
 notifications:
-    email: false
+  email: false
+
+install:
+  - pip install python-coveralls
 
 script: python test_rpn.py
+
+after_success:
+  - coveralls
